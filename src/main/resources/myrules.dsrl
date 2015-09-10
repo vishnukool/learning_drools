@@ -1,0 +1,12 @@
+package demo
+
+import com.mycompany.app.model.*
+
+expander myrules.dsl
+
+rule "print warning if balance less than 1 Rs"
+  when
+    Account balance is less than 100
+  then
+    Print Warning
+end
